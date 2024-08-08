@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Игра с клетками</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="container">
+        <div id="controls">
+            <div id="color-picker">
+                <div class="color-option" data-color="black"></div>
+                <div class="color-option" data-color="red"></div>
+                <div class="color-option" data-color="green"></div>
+                <div class="color-option" data-color="blue"></div>
+            </div>
+            <button id="clear-button">Clear</button>
+            <button id="save-button">Save</button>
+            <label for="size-slider">Размер клетки:</label>
+            <div id="size-control">
+                <input type="number" id="size-input" min="10" max="50" value="20" />
+                <input type="range" id="size-slider" min="10" max="50" value="20" />
+            </div>
+            <div id="info">Размер сетки: 10x10 | Количество клеток: 100</div>
+        </div>
+        <div id="grid-container"></div>
+        <canvas id="canvas" style="display: none;"></canvas>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

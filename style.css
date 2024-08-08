@@ -1,0 +1,109 @@
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+#container {
+    display: flex;
+    align-items: flex-start;
+}
+
+#controls {
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+}
+
+#color-picker {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.color-option {
+    width: 30px;
+    height: 30px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    border: 2px solid transparent;
+}
+
+.color-option[data-color="black"] {
+    background-color: black;
+}
+
+.color-option[data-color="red"] {
+    background-color: red;
+}
+
+.color-option[data-color="green"] {
+    background-color: green;
+}
+
+.color-option[data-color="blue"] {
+    background-color: blue;
+}
+
+.color-option.selected {
+    border-color: #fff;
+}
+
+#clear-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+label {
+    margin-bottom: 10px;
+}
+
+#size-control {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+#size-input {
+    width: 60px;
+    margin-right: 10px;
+}
+
+#size-slider {
+    flex-grow: 1;
+}
+
+#grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(var(--cell-size, 20px), 1fr));
+    grid-template-rows: repeat(auto-fill, minmax(var(--cell-size, 20px), 1fr));
+    width: 80vmin;
+    height: 80vmin;
+}
+
+.cell {
+    border: 1px solid #ccc;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    background-color: white; /* Изначальный цвет клетки */
+}
+
+
+#controls {
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+}
+
+#info {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #333;
+    text-align: left;
+}
